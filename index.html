@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Station</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start navbar -->
+    <div class="container">
+      <div class="navbar">
+        <img class="logo" src="images/logo.png" alt="" />
+        <nav>
+          <ul id="menu-list">
+            <li><a href="">Game controller</a></li>
+            <li><a href="">VR accessories</a></li>
+            <li><a href="">Media remote</a></li>
+            <li><a href="">Others</a></li>
+          </ul>
+        </nav>
+        <img class="menu-icon" src="images/menu.png" alt="" onclick="togglemenu()" />
+      </div>
+      <!-- end navbar -->
+
+      <!-- 1st section start -->
+      <div class="row">
+        <div class="col-1">
+          <h2>PS4 V2 <br />Dualshock 4</h2>
+          <h3>Wireless controller of playstation 4</h3>
+          <p>(compatible/Generic)</p>
+          <h4>$32.50</h4>
+          <button type="button">Buy now <img src="images/arrow.png" alt=""></button>
+        </div>
+        <div class="col-2">
+            <img class="controller" src="images/controller.png" alt="">
+            <div class="color-box"></div>
+            <div class="add-btn">
+                <img src="images/add.png" alt="">
+                <p><small>Add to cart</small></p>
+            </div>
+        </div>
+      </div>
+      <!-- 1st section end -->
+
+      <div class="social-links">
+          <img class="fb-icon" src="images/fb.png" alt="">
+          <img class="twitter" src="images/tw.png" alt="">
+          <img class="instagram" src="images/ig.png" alt="">
+      </div>
+    </div>
+
+    <!-- javascript -->
+
+    <script>
+        var menuList = document.getElementById("menu-list"); 
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+
+                menuList.style.maxHeight = "130px"; 
+            }
+            else{
+                menuList.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    
+  </body>
+</html>
